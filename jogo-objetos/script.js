@@ -25,7 +25,6 @@ class Jogo {
         this.tamy = tamy;
     }
     desenhar(cor) {
-
         ctx.fillStyle = cor
         ctx.fillRect(this.posx, this.posy, this.tamx, this.tamy) //x, y, largura, altura
     }
@@ -86,7 +85,6 @@ function verificaColisao() {
 
 function houveColisao() {
     obstaculo.velocidade = 0
-    atualizaObstaculo()
     ctx.fillStyle = 'red'
     ctx.fillRect((canvas.width / 2) - 200, (canvas.height / 2) - 50, 400, 100)
     ctx.fillStyle = 'black'
